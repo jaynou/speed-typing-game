@@ -1,7 +1,18 @@
 window.addEventListener('load', init);
 
 // Globals (global variables used within functions)
-let time = 5;
+
+// Available Levels
+const levels = {
+    easy: 5,
+    medium: 3,
+    hard: 2
+}
+
+// To change level
+const currentLevel = levels.easy;
+
+let time = currentLevel;
 let score = 0;
 let isPlaying;
 
@@ -64,7 +75,7 @@ function init() {
 function startMatch() {
     if(matchWords()) {
       isPlaying = true;
-      time = 6;
+      time = currentLevel + 1;
       showWord(words);
       wordInput.value = '';
       score++;
