@@ -22,7 +22,6 @@ const currentWord = document.querySelector('#current-word');
 const scoreDisplay = document.querySelector('#score');
 const timeDisplay = document.querySelector('#time');
 const message = document.querySelector('#message');
-const seconds = document.querySelector('#seconds');
 
 const words = [
     'Adidas',
@@ -59,8 +58,6 @@ const words = [
 
 //Initializing game
 function init() {
-    // Show number of seconds in UI
-    seconds.innerHTML = currentLevel;
     // Load word from array
     showWord(words);
     // Start matching on word input
