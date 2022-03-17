@@ -1,0 +1,12 @@
+body {
+    background-color: #F7CBAF;
+    color: white;
+}   
+
+#app-container {
+    background: url("https://cdn.dribbble.com/users/1552574/screenshots/13928033/media/f81be862e4c8b0b30e81757c0dfffc5c.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 95vh;
+}
