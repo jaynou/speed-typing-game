@@ -21,7 +21,6 @@ const wordInput = document.querySelector('#word-input');
 const currentWord = document.querySelector('#current-word');
 const scoreDisplay = document.querySelector('#score');
 const timeDisplay = document.querySelector('#time');
-const message = document.querySelector('#message');
 
 const words = [
     'Adidas',
@@ -92,10 +91,8 @@ function startMatch() {
 // Match currentWord to wordInput
 function matchWords() {
     if(wordInput.value === currentWord.innerHTML) {
-        message.innerHTML = 'Correct!';
         return true;
     } else {
-        message.innerHTML = '';
         return false;
     }
 }
@@ -130,7 +127,6 @@ function countdown() {
 // Check game status aka if not playing/time is out
 function checkStatus() {
     if(!isPlaying && time === 0) {
-        message.innerHTML = 'Game Over!';
         score = -1; 
     }
 }
